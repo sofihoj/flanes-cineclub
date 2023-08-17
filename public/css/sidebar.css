@@ -156,10 +156,3 @@ aside li {
 .fas {
     color: #C3953C;
 }
-
-@media (min-width: 481px) {
-    aside,
-    .fa-bars {
-        display: none;
-    }
-}

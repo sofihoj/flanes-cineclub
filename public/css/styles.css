@@ -22,6 +22,10 @@ header {
     flex-direction: column;
 }
 
+.header-menu {
+    display: none;
+}
+
 header .top-header {
     background-color: #C3953C;
     height: 25px;
@@ -60,6 +64,10 @@ header .top-header {
     justify-content: space-between;
 }
 
+.medium-header p {
+    display: none;
+}
+
 .medium-header i {
     margin-left: 20px;
     font-size: 25px;
@@ -91,6 +99,11 @@ header .top-header {
 .crew,
 .form-filmxl {
     display: none;
+}
+
+.left-light,
+.right-light {
+    max-width: 300px;
 }
 
 main {
@@ -134,8 +147,9 @@ main {
 }
 
 .poster {
-    flex: 0 0 auto;
-    width: 35%;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    width: 115px;
 }
 
 .poster img {
@@ -151,8 +165,10 @@ main {
     align-items: flex-start;
     justify-content: center; */
     color: #FFF;
-    padding: 20px 0 20px 10px;
+    /* padding: 20px 0 20px 10px; */
     text-align: initial;
+    flex-grow: 1;
+    display: block;
 }
 
 .movie-title {
@@ -272,6 +288,50 @@ footer span {
 }
 /*-------------*/
 
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    /* .poster {
+        width: 20%;
+    } */
+}
+
+@media (min-width: 481px) {
+    aside,
+    .fa-bars {
+        display: none;
+    }
+
+    .medium-header p {
+        display: inline;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #FFF;
+        margin: 0 20px;
+    }
+
+    .medium-header {
+        justify-content: flex-start;
+    }
+
+    .header-menu {
+        display: inline;
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .header-menu ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-menu li{
+        list-style: none;
+        margin: 0 10px;
+        color: #FFF;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
 @media only screen and (min-width: 769px)  {
     .header-film,
     .form-film {
@@ -289,17 +349,19 @@ footer span {
         justify-content: space-between;
     }
 
-    .main-movie img {
-        width: 100%;
-        max-height: 370px;
+    .lights-img {
+        flex: 1;
+        align-self: center;
+    }
+
+    .lights-img img {
+        max-width: 100%;
+        height: auto;
     }
 
     .next-movie {
         margin-top: 85px;
-    }
-
-    .poster {
-        width: 30%;
+        flex: 2;
     }
 
     .form-crew {
@@ -331,5 +393,34 @@ footer span {
 
     .send-movie form input {
         width: 350px;
+    }
+
+    .movie-duration{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    .movie-title {
+        font-size: 18px;
+    }
+
+    .movie-director {
+        font-size: 13px;
+    }
+
+    .movie-about {
+        font-size: 14px;
+    }
+
+    .medium-header p {
+        font-size: 36px;
+    }
+
+    .header-menu {
+        margin-right: 40px;
+    }
+
+    .header-menu li{
+        margin: 0 30px;
     }
 }
