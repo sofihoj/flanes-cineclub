@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flanes cineclub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/movies.css">
+</head>
+<body>
+    <%- include('./partials/header.ejs')%>
+    <main>
+        <%- include('./partials/sidebar.ejs')%>
+        <div class="title">
+            <p>Películas anteriores</p>
+        </div>
+        <div class="posters-container">
+            <section class="posters">
+                <p class="header-poster">xx/xx/xx</p>
+                <div class="movie-poster">
+                    <img src="/img/white.jpg" alt="Movie poster">
+                </div>
+                <p class="movie-plus">+</p>
+            </section>
+            <section class="posters">
+                <p class="header-poster">xx/xx/xx</p>
+                <div class="movie-poster">
+                    <img src="/img/white.jpg" alt="Movie poster">
+                </div>
+                <p class="movie-plus">+</p>
+            </section>
+            <section class="posters">
+                <p class="header-poster">xx/xx/xx</p>
+                <div class="movie-poster">
+                    <img src="/img/white.jpg" alt="Movie poster">
+                </div>
+                <p class="movie-plus">+</p>
+            </section>
+            <section class="posters">
+                <p class="header-poster">xx/xx/xx</p>
+                <div class="movie-poster">
+                    <img src="/img/white.jpg" alt="Movie poster">
+                </div>
+                <p class="movie-plus">+</p>
+            </section>
+        </div>
+        <p class="number">[ 1 ]</p>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+    </script>
+    <script src="/js/sidebar.js"></script>
+</body>
+</html>
