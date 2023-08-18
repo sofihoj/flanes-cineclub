@@ -4,6 +4,9 @@ const usersController = {
     },
     login: (req, res) => {
         res.render('users/login');
+    },
+    profile: (req, res) => {
+        res.render('users/profile');
     }
 }
 

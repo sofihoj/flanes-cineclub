@@ -1,0 +1,145 @@
+.profile-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 90%;
+    margin: 30px 0px;
+}
+
+.profile-banner {
+    background-color: #C3953C;
+    color: #EBEBEB;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#datos {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #EBEBEB;
+}
+
+.profile-content {
+    background-color: #8B0000;
+    color: #EBEBEB;
+    padding: 5px 20px;
+    height: inherit;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+
+.profile-content p {
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 20px;
+    padding: 5px 0;
+}
+
+.profile-content span {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 5px 0 0;
+}
+
+.user-data-info {
+    position: relative;
+}
+
+.modificar-datos {
+    position: absolute;
+    bottom: -55px;
+}
+
+.my-movies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8B0000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: inherit;
+}
+
+.my-movies img {
+    width: 50%;
+    margin: 15px 0 15px 5px;
+}
+
+.my-movies-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-movies-btn {
+    margin: 20px 5px;
+    padding: 15px 5px;
+    text-transform: uppercase;
+    background-color: #C3953C;
+    color: #FFF;
+    border: 3px solid #242424;
+    border-radius: 5px;
+}
+
+.my-movies-btn:hover {
+    font-weight: bold;
+    color: #8B0000;
+    transform: scale(1.02)
+}
+
+@media only screen and (min-width: 769px)  {
+    .profile-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 50%;
+        margin: 15px 50px 30px 50px;
+    }
+
+    .profile-content p {
+        margin: 4px 20px;
+    }
+
+    #datos {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 481px) {
+    .my-movies img {
+        max-height: 90%;
+        width: 40%;
+    }
+}

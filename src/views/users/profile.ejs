@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flanes | PERFIL</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/movies.css">
+    <link rel="stylesheet" href="/css/login-signup.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/header.ejs')%>
+    <main>
+        <%- include('../partials/sidebar.ejs')%>
+        <div class="title">
+            <p>Mi perfil</p>
+        </div>
+        <div class="profile-box">
+            <section class="profile-section user-data-info">
+                <div class="profile-banner">
+                    <i class="fa-solid fa-user"></i>
+                    <p id="datos">Mis datos</p>
+                </div>
+                <div class="profile-content">
+                    <p><span>Nombre |</span>Nombre</p>
+                    <p><span>Apellido |</span>Apellido</p>
+                    <p><span>Email |</span>Email</p>
+                    <p><span>Contraseña |</span>******</p>
+                </div>
+                <div class="modal-inner">
+                    <input type="button" class="modificar-datos past-movies-btn" value="Modificar">
+                </div>
+            </section>
+            <section class="profile-section">
+                <div class="profile-banner">
+                    <p id="datos">Mis películas</p>
+                </div>
+                <div class="my-movies">
+                    <img src="/img/director-chair.png" alt="Silla director de cine">
+                    <div class="my-movies-btns">
+                        <input type="button" class="my-movies-btn" value="Vistas">
+                        <input type="button" class="my-movies-btn" value="Recomendadas">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs')%>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+    </script>
+    <script src="/js/sidebar.js"></script>
+</body>
+</html>
