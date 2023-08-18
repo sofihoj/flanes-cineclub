@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flanes | Películas vistas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/movies.css">
+    <link rel="stylesheet" href="/css/login-signup.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/header.ejs')%>
+    <main>
+        <%- include('../partials/sidebar.ejs')%>
+        <div class="title">
+            <p>Películas vistas</p>
+        </div>
+        <div class="my-movies-seen">
+            <section class="next-movie my-movie">
+                <div class="poster">
+                    <img src="/img/white.jpg" alt="Movie poster">
+                </div>
+                <div class="movie-info">
+                    <h1 class="movie-title">Title</h1>
+                    <section>ESTRELLAS</section>
+                    <p class="movie-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiiiii.</p>
+                </div>
+                <img src="/img/camera.png" alt="Movie camera" class="camera">
+            </section>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs')%>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+    </script>
+    <script src="/js/sidebar.js"></script>
+</body>
+</html>

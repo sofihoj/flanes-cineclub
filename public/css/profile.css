@@ -135,6 +135,18 @@ a{
     #datos {
         padding: 10px 0;
     }
+
+    .my-movies-seen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+        padding: 15px 35px;
+    }
+
+    .my-movie {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 481px) {

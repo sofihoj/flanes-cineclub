@@ -444,3 +444,13 @@ footer span {
         margin: 0 30px;
     }
 }
+
+@media only screen and (max-width: 340px)  {
+    .next-movie {
+        height: 300px;
+    }
+
+    .poster {
+        width: 70px;
+    }
+}

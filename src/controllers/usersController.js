@@ -7,7 +7,11 @@ const usersController = {
     },
     profile: (req, res) => {
         res.render('users/profile');
+    },
+    movies: (req, res) => {
+        res.render('users/myMovies');
     }
 }
+
 
 module.exports = usersController;
