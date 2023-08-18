@@ -59,14 +59,15 @@ aside .bottom-sidebar {
 }
 
 aside .top-sidebar {
-    padding: 25px 0;
+    padding: 45px 0;
     font-size: 20px;
 }
 
 .top-sidebar p {
     text-transform: uppercase;
     color: #EBEBEB;
-    text-shadow: 0 0 3px #FF0000
+    text-shadow: 0 0 3px #FF0000;
+    font-size: 22px;
 }
 
 .fa-xmark {
@@ -155,4 +156,8 @@ aside li {
 
 .fas {
     color: #C3953C;
+}
+
+.fa-arrow-right-to-bracket {
+    margin-right: 15px;
 }

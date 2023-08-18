@@ -1,0 +1,141 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    width: 90%;
+}
+
+.form {
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 60px 40px 40px 40px;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    min-width: 150px;
+}
+
+.form-group label {
+    color: #FFF;
+    font-size: 18px;
+    padding-bottom: 1em;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.form-group input {
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    margin-bottom: 5px;
+    min-width: 150px;
+}
+
+.text-error {
+    text-align: end;
+    font-size: 13px;
+    color: red;
+}
+
+.form-group .input-error {
+    border: red 1px solid;
+}
+
+.form button {
+    background-color: #C3953C;
+    color: #ebebeb;
+    border: 3px solid #242424;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 15px 15px;
+}
+
+.form p {
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    margin: 1.5em 0 1em 0;
+}
+
+.form p a {
+    color: #FFF;
+}
+
+.form p a:hover {
+    font-weight: bold;
+}
+
+#rememberUser {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#remember_user{
+    height: 14px;
+    min-width: 20px;
+}
+
+#rememberUser label {
+    margin-top: 0;
+    margin-left: 2px;
+}
+
+.form {
+    position: relative;
+}
+
+.form img {
+    position: absolute;
+    max-width: 110px;
+    top: -40px;
+    right: -30px;
+}
+
+#ticket {
+    max-width: 140px;
+    top: -30px;
+}
+
+@media only screen and (min-width: 769px)  {
+    form {
+        width: 65%;
+    }
+
+    .form {
+        padding: 40px;
+        margin: 50px 80px;
+    }
+
+    .form p {
+        font-size: 15px;
+    }
+
+    .form button {
+        padding: 15px 25px;
+    }
+
+    .form img {
+        position: absolute;
+        max-width: 150px;
+        top: -40px;
+        right: -30px;
+    }
+
+    #ticket {
+        max-width: 180px;
+        /* top: -30px; */
+    }
+}

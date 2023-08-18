@@ -50,6 +50,9 @@ header .top-header {
 
 .top-header a {
     color: #242424;
+}
+
+header a {
     text-decoration: none;
 }
 
@@ -113,16 +116,17 @@ main {
 
 .title {
     background-color: #C3953C;
-    text-align: center;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title p {
     color:#242424;
     margin: 0;
-    padding: 6px 0;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .next-movie {
@@ -288,6 +292,10 @@ footer span {
 }
 /*-------------*/
 
+#flanes-title {
+    display: none;
+}
+
 @media screen and (min-width: 481px) and (max-width: 769px) {
     /* .poster {
         width: 20%;
@@ -330,9 +338,21 @@ footer span {
         font-size: 16px;
         text-transform: uppercase;
     }
+
+    #flanes-title {
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 769px)  {
+    .title {
+        height: 50px;
+    }
+    
+    .title p {
+        font-size: 20px;
+    }
+
     .header-film,
     .form-film {
         display: none;
